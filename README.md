@@ -1,4 +1,4 @@
-# NestJS File Analyzer
+# Transaction Analyzer
 
 A NestJS application for analyzing transaction files using AI. This application provides endpoints for uploading CSV files and analyzing merchant and spending patterns. It is deployed to Railway fully operational.
 
