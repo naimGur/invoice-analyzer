@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { AnalyzeService } from './analyze.service';
 import { AnalyzeController } from './analyze.controller';
 import { FileModule } from '../file/file.module';
-import { ChatGPTAnalyzer } from '../../Analyze/ChatGPT'; // Import concrete implementation
+import { ChatGPTAnalyzer } from '../../Analyze/ChatGPT';
 
 @Module({
   imports: [FileModule],
@@ -10,8 +10,8 @@ import { ChatGPTAnalyzer } from '../../Analyze/ChatGPT'; // Import concrete impl
   providers: [
     AnalyzeService,
     {
-      provide: 'Analyze', // Token/identifier
-      useClass: ChatGPTAnalyzer, // Concrete implementation
+      provide: 'Analyze',
+      useClass: ChatGPTAnalyzer,
     },
   ],
 })

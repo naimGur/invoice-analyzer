@@ -58,7 +58,7 @@ export class LocalFileStore implements FileStore {
     } catch (error) {
       if (error.code === 'ENOENT') {
         console.error('File not found:', this.filePath);
-        return []; // Return an empty array if the file doesn't exist
+        return [];
       }
       throw error;
     }

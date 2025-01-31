@@ -64,7 +64,7 @@ export class ChatGPTAnalyzer implements Analyze {
               'You are a financial analyst. Return valid JSON with { merchants: [...] }',
           },
           {
-            role: 'user', // Added user message with actual prompt
+            role: 'user',
             content: prompt,
           },
         ],
@@ -102,7 +102,7 @@ export class ChatGPTAnalyzer implements Analyze {
               'You are a pattern detection system. Return valid JSON with { patterns: [...] }',
           },
           {
-            role: 'user', // Added user message with actual prompt
+            role: 'user',
             content: prompt,
           },
         ],

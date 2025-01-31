@@ -6,7 +6,7 @@ import { FileService } from '../file/file.service';
 export class AnalyzeService {
   constructor(
     private readonly fileService: FileService,
-    @Inject('Analyze') private readonly analyzer: Analyze, // Inject via token
+    @Inject('Analyze') private readonly analyzer: Analyze,
   ) {}
 
   async analyzeMerchant() {
