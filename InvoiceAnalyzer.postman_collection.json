@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "034feade-7a87-4872-bbe3-1cecaf4c0045",
+		"name": "Beta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6804468"
+	},
+	"item": [
+		{
+			"name": "patterns",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://invoice-analyzer-production-d6c9.up.railway.app/api/analyze/patterns",
+					"protocol": "https",
+					"host": [
+						"invoice-analyzer-production-d6c9",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"analyze",
+						"patterns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "merchant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://invoice-analyzer-production-d6c9.up.railway.app/api/analyze/merchants",
+					"protocol": "https",
+					"host": [
+						"invoice-analyzer-production-d6c9",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"analyze",
+						"merchants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/naim/Downloads/sample-dataset (1).csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://invoice-analyzer-production-d6c9.up.railway.app/api/files",
+					"protocol": "https",
+					"host": [
+						"invoice-analyzer-production-d6c9",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload file",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/naim/Desktop/beta.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://invoice-analyzer-production-d6c9.up.railway.app/api/files",
+					"protocol": "https",
+					"host": [
+						"invoice-analyzer-production-d6c9",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "healthCheck",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/naim/Desktop/beta.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://invoice-analyzer-production-d6c9.up.railway.app/api/health",
+					"protocol": "https",
+					"host": [
+						"invoice-analyzer-production-d6c9",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

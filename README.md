@@ -6,6 +6,8 @@ This code is written in hexagonal architecture for testability and single respon
 
 Also a postman collection added for testing the application.
 
+(InvoiceAnalyzer.postman_collection.json)
+
 ## Features
 
 - Upload CSV files
@@ -15,11 +17,28 @@ Also a postman collection added for testing the application.
 
 ## Prerequisites
 
+- Node (20.0 or higher)
 - Docker
 - OpenAI API key
 
 ## Installation Using Docker Locally
 
+Clone this repository and cd into the project folder
+
 `docker build -t nestjs-file-analyzer .`
 
 `docker run -p 3000:3000 --env-file .env nestjs-file-analyzer`
+
+## Installation and Testing Without Docker
+
+Clone this repository and cd into the project folder
+
+`npm i`
+
+To unit test:
+`npm run test`
+
+To run:
+`npm run start`
+
+Unit tests are done only for file service. They are for example. They can be extended.
