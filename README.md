@@ -6,7 +6,7 @@ This code is written in hexagonal architecture for testability and single respon
 
 Also a postman collection added for testing the application.
 
-(InvoiceAnalyzer.postman_collection.json)
+(TransactionAnalyzer.postman_collection.json)
 
 ## Features
 
